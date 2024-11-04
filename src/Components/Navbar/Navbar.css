@@ -1,0 +1,198 @@
+#navbar {
+    display: flex;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+    padding: 1rem 0.6rem;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-links,
+.middle,
+.navbar-right {
+    flex: 1;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 10px;
+}
+.navbar-links .link {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    box-sizing: border-box;
+    padding: 5px 22px;
+    border-radius: 2rem;
+    color: white;
+}
+
+.navbar-links .link:hover {
+    background-color: #FDC0BC;
+    color: black;
+}
+
+.active-link {
+    background-color: #FDC0BC;
+    color: black;
+    box-sizing: border-box;
+    padding: 5px 22px;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle img {
+    height: 70px;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 3rem;
+}
+.navbar-right div img {
+    height: 50px;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+}
+.navbar-right div img:hover {
+    opacity: 0.5;
+}
+.navbar-right div img:active {
+    opacity: 0.3;
+}
+
+.hamburger {
+    display: none;
+}
+.resp-title {
+    display: none;
+}
+.resp-links {
+    display: none
+}
+/* Responsive Layout */
+
+@media (max-width: 1025px) {
+    .middle {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    #navbar {
+        box-sizing: border-box;
+        padding: 1rem 3rem;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .navbar-right {
+        display: none;
+    }
+    .resp-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .line1,
+    .line2,
+    .line3 {
+        width: 40px;
+        height: 2px;
+        background-color: white;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+    .line1-active {
+        transform: translate(0, 4px) rotate(-45deg);
+        width: 40px;
+        height: 2px;
+        background-color: white;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+    .line2-active {
+        opacity: 0;
+    }
+    .line3-active {
+        transform: translate(0, -4px) rotate(45deg); 
+        width: 40px;
+        height: 2px;
+        background-color: white;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+    .resp-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        gap: 1rem;
+        max-height: 0;
+        overflow: hidden;   
+        transition: max-height 0.4s ease;
+        box-shadow: 0 1px 0 #FDC0BC;
+    }
+    .resp-links a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+    .resp-links-open {
+        box-sizing: border-box;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4rem;
+        gap: 1rem;
+        overflow: hidden;   
+        transition: max-height 1.5s ease;
+        box-shadow: 0 1px 0 #FDC0BC;
+    }
+    .resp-links-open a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 426px) {
+    #navbar {
+        padding: 1rem 10px;
+    }   
+}
