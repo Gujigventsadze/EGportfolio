@@ -44,7 +44,7 @@ textarea {
     font-weight: 500;
     transition: opacity 0.25s;
     width: 100%;
-    color: #FDC0BC;
+    color: black;
 }
 .submitBtn:hover {
     opacity: 0.7;
