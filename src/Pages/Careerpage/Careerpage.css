@@ -1,0 +1,8 @@
+#career-page {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+}
+.ant-timeline-item-tail {
+    background-color: white;
+  }

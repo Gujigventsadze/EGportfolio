@@ -4,10 +4,17 @@ import jobSearch from "../../assets/JobsearchLAPTOP.png";
 import chatApp from "../../assets/chat-app.png";
 import eCom from "../../assets/e-commerce.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projectspage = () => {
   return (
-    <section id="projects">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
       <div className="projects-title">LIST OF PROJECTS</div>
       <div className="projects-container">
         <Projectbox
@@ -40,7 +47,7 @@ const Projectspage = () => {
       >
         <button className="intro-button">See Full List</button>
       </Link>
-    </section>
+    </motion.section>
   );
 };
 

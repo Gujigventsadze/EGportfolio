@@ -13,7 +13,7 @@ import "./Techstack.css";
 
 const Techstack = () => {
   return (
-    <div className="stack-container">
+    <div>
       <div className="stack-grid">
         <img src={html} />
         <img src={js} />

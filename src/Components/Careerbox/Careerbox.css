@@ -1,0 +1,56 @@
+.career-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.career-top {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Oswald";
+    text-align: center;
+}
+.career-body {
+    text-align: start;
+}
+
+.career-ed-lvl {
+    box-sizing: border-box;
+    padding-top: 2rem;
+    font-weight: 500;
+    color: gray
+}
+
+/* Responsive Layout */
+
+@media (max-width: 769px) {
+    .career-top {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 426px) {
+    .career-container {
+        width: 17rem;
+    }
+
+}
+@media (max-width: 376px) {
+    .career-container {
+        width: 15rem;
+    }
+}
+@media (max-width: 321px) {
+    .career-container {
+        padding: 20px;
+        width: 11rem;
+    }   
+}

@@ -12,7 +12,7 @@ import ex from "../../assets/exp.png";
 import tp from "../../assets/apple-icon.png";
 import rn from "../../assets/png-transparent-react-native-hd-logo-removebg-preview.png";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const Bitbox = () => {
   const [techStack, setTechStack] = useState(false);
 
@@ -21,7 +21,13 @@ const Bitbox = () => {
   };
 
   return (
-    <section id="intro">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
       <div className="intro-container">
         <div
           className={techStack ? "stack-container-visible" : "stack-container"}
@@ -58,7 +64,7 @@ const Bitbox = () => {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

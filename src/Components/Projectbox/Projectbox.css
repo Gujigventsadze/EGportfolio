@@ -78,6 +78,8 @@
 @media (max-width: 426px) {
     .projectbox-container {
         padding: 10px;
+        border-radius: 3rem;
+        padding: 2rem 0;
     }
     .projectbox-img img {
         width: 300px;
