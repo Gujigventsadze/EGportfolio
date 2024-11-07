@@ -1,0 +1,99 @@
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    align-items: center;
+    color: white;
+    position: relative;
+    font-family: "Poppins";
+}
+#contact-form h1 {
+    font-size: 2rem;
+}
+.userForm {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5px;
+}
+.userForm input,
+textarea {
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+.userForm textarea {
+    height: 10rem;
+    resize: none;
+}
+.btns {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+}
+
+.submitBtn {
+    cursor: pointer;
+    background-color: #FDC0BC;
+    font-weight: 500;
+    transition: opacity 0.25s;
+    width: 100%;
+}
+.submitBtn:hover {
+    opacity: 0.7;
+}
+.submitBtn:active {
+    opacity: 0.5;
+}
+
+.pop-up-message {
+    background-color: black;
+    color: #FDC0BC;
+    position: absolute;
+    top: 20%;
+    left: 40.5%;
+    height: 20rem;
+    border-radius: 1rem;
+    width: 20rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+}
+.pop-up-message-visible {
+    background-color: black;
+    color: #FDC0BC;
+    position: absolute;
+    top: 20%;
+    left: 40.5%;
+    height: 20rem;
+    border-radius: 1rem;
+    width: 20rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.15s;
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Responsive Layout */
+@media (max-width: 1025px) {
+    .userForm {
+        width: 70%;
+    }
+}
+@media (max-width: 426px) {
+    .userForm {
+        width: 90%;
+    }
+}
