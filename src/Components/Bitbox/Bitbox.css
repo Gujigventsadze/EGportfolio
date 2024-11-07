@@ -101,3 +101,8 @@
         height: 75px;
     }
 }
+@media (max-width: 321px) {
+    .stack-grid img {
+        height: 60px;
+    }
+}

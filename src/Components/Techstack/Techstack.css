@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .stack-grid {
     display: grid;
@@ -12,10 +13,4 @@
 
 .stack-grid img {
     height: 128px;
-}
-
-@media (max-width: 321px) {
-    .stack-grid img {
-        height: 110px;
-    }
 }
