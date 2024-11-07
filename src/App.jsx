@@ -18,9 +18,9 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Homepage />} />
           <Route path="/EGportfolio" element={<Homepage />} />
-          <Route path="/EGportfolio/projects" element={<Projectspage />} />
-          <Route path="/EGportfolio/career" element={<Careerpage />} />
-          <Route path="/EGportfolio/contact" element={<Contactpage />} />
+          <Route path="/projects" element={<Projectspage />} />
+          <Route path="/career" element={<Careerpage />} />
+          <Route path="/contact" element={<Contactpage />} />
         </Routes>
       </AnimatePresence>
     </>
