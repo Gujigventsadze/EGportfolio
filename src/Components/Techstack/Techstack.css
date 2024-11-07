@@ -13,3 +13,9 @@
 .stack-grid img {
     height: 128px;
 }
+
+@media (max-width: 321px) {
+    .stack-grid img {
+        height: 110px;
+    }
+}
