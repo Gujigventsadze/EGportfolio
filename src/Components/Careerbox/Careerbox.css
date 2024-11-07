@@ -39,7 +39,7 @@
 }
 @media (max-width: 426px) {
     .career-container {
-        width: 17rem;
+        width: 20rem;
     }
 
 }
@@ -51,6 +51,6 @@
 @media (max-width: 321px) {
     .career-container {
         padding: 20px;
-        width: 11rem;
+        width: 14.5rem;
     }   
 }

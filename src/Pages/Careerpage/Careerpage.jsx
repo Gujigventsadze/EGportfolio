@@ -14,6 +14,7 @@ import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 const Careerpage = () => {
   const isWideScreen = useMediaQuery("(max-width: 426px)");
+  const isMobileScreen = useMediaQuery("(max-width: 321px)");
 
   return (
     <motion.section
@@ -26,6 +27,7 @@ const Careerpage = () => {
       <Timeline
         position={isWideScreen ? "right" : "alternate"}
         sx={{ width: "100%" }}
+        style={{ transform: `translateX(${isMobileScreen ? "-6%" : "0"})` }}
       >
         <TimelineItem>
           <TimelineSeparator>
